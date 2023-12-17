@@ -1,9 +1,65 @@
+
 /* style.css */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    color: blue;
+/* Apply a box-sizing rule */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Styling for the whole body */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header and navigation styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Main hero section styles */
+.hero {
+  background: url('path-to-your-hero-image.jpg') no-repeat center center/cover;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Featured products styles */
+.featured-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Product card styles */
+.featured-products div {
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Responsive grid for products */
+@media (min-width: 600px) {
+  .featured-products {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
